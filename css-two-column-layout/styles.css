@@ -17,6 +17,14 @@
   text-align: center;
 }
 
+.reduction {
+  border: solid;
+}
+
+.padding-15 {
+  padding: 15px;
+}
+
 .col-one-half {
   width: 50%;
 }
