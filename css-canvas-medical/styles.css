@@ -93,20 +93,15 @@ a {
   flex-basis: calc(100% / 4);
 }
 
-.reduction-30 {
+.width-30 {
   width: 30%;
 }
 
-.reduction-15 {
+.width-15 {
   width: 15%;
 }
 
-.reduction-70 {
-  width: 60%;
-  font-size: 13px;
-}
-
-.reduction-100 {
+.width-100-position-brightness {
   width: 100%;
   position: relative;
   filter: brightness(81%);
