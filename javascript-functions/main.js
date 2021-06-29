@@ -18,5 +18,6 @@ function getFirstName(person) {
 }
 
 function getLastElement(array) {
-  return array.splice(array.length - 1);
+  var last = array[array.length - 1];
+  return last;
 }
