@@ -7,18 +7,18 @@ var orderHistory = [
     viewOrderDetails: false,
     viewinvoice: false,
     orderDelivered: 'August 8, 2020',
-    image: 'url',
     returnWindowClosed: true,
     subTotal: '$31.55',
-    buyAgain: false,
-    viewItem: false,
     writeReview: false,
     handedToResident: false,
     type: [
       {
         itemType: 'book',
         title: 'JavaScript for impatient programmers',
-        author: 'Dr. Axel Rauschmayer'
+        author: 'Dr. Axel Rauschmayer',
+        image: 'url',
+        buyAgain: false,
+        viewItem: false
       }
     ]
   },
@@ -30,18 +30,18 @@ var orderHistory = [
     viewOrderDetails: false,
     viewinvoice: false,
     orderDelivered: 'Jul 12, 2020',
-    image: 'url',
     returnWindowClosed: true,
     subTotal: '$41.33',
-    buyAgain: false,
-    viewItem: false,
     writeReview: false,
     handedToResident: true,
-    type: [
+    items: [
       {
         itemType: 'book',
         title: 'The Timeless Way of Building',
-        author: 'Christopher Alexander'
+        author: 'Christopher Alexander',
+        image: 'url',
+        buyAgain: false,
+        viewItem: false
       }
     ]
   },
@@ -53,17 +53,17 @@ var orderHistory = [
     viewOrderDetails: false,
     viewinvoice: false,
     orderDelivered: 'Jul 7, 2020',
-    image: 'url',
     returnWindowClosed: true,
     subTotal: '$15.98',
-    buyAgain: false,
-    viewItem: false,
     writeReview: false,
     handedToResident: true,
-    type: [
+    items: [
       {
         itemType: 'electronic',
-        description: 'Gamecube Controller'
+        description: 'Gamecube Controller',
+        image: 'url',
+        buyAgain: false,
+        viewItem: false
       }
     ]
   },
@@ -75,23 +75,26 @@ var orderHistory = [
     viewOrderDetails: false,
     viewinvoice: false,
     orderDelivered: 'Jul 5, 2020',
-    image: 'url',
     returnWindowClosed: true,
-    buyAgain: false,
-    viewItem: false,
     writeReview: false,
     handedToResident: false,
-    type: [
+    items: [
       {
         itemType: 'electronic',
         subTotal: '$94.95',
-        description: 'Gamecube Controller'
+        description: 'Gamecube Controller',
+        image: 'url',
+        buyAgain: false,
+        viewItem: false
       },
       {
         itemType: 'book',
         title: 'The Art of Sql',
         author: 'Stephane, Faroult',
-        subTotal: '$33.99'
+        subTotal: '$33.99',
+        image: 'url',
+        buyAgain: false,
+        viewItem: false
       }
     ]
   }
