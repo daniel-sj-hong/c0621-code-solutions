@@ -11,7 +11,7 @@ var orderHistory = [
     subTotal: '$31.55',
     writeReview: false,
     handedToResident: false,
-    type: [
+    items: [
       {
         itemType: 'book',
         title: 'JavaScript for impatient programmers',
