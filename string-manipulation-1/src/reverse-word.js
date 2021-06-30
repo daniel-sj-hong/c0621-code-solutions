@@ -1,6 +1,8 @@
 /* exported reverseWord */
 function reverseWord(word) {
-  for (var i = 0; word.length; i++) {
-
+  for (var i = word.length - 1; i > word.length; i--) {
+    var container = '';
+    container += i;
   }
+  return container;
 }
