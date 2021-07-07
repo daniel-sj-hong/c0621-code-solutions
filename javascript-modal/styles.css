@@ -49,6 +49,7 @@
   padding: 40px;
   background-color: white;
   box-shadow: 5px 5px 15px 800px rgba(0, 0, 0, 0.53);
+  border-radius: 5px;
 }
 
 .hidden {
