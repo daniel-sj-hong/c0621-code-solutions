@@ -25,11 +25,18 @@ function handleKey(event) {
       }
     } else {
       $keys[index].className = 'red border';
-
     }
   }
 }
 
 function handleClick(event) {
-  location.reload();
+  index = 0;
+  correct = 0;
+  keyStrokes = 0;
+  $button.className = 'hidden';
+  $accuracy.className = 'hidden';
+  for (var i = 0; i < $keys.length; i++) {
+    $keys[i].className = '';
+  }
+  $keys[0].className = 'border';
 }
