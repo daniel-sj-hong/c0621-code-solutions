@@ -7,5 +7,6 @@ setInterval(function () {
     $header.textContent = counter;
   } else {
     $header.textContent = 'eternal pain and suffering. what is life';
+    clearInterval();
   }
 }, 1000);
