@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Carousel</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-10 center-all">
+        <i class="fas fa-angle-left left-arrow"></i>
+      </div>
+      <div class="col-80 center-all">
+        <img src="images/001.png" class="view" data-view="1">
+        <img src="images/004.png" class="view hidden" data-view="2">
+        <img src="images/007.png" class="view hidden" data-view="3">
+        <img src="images/025.png" class="view hidden" data-view="4">
+        <img src="images/039.png" class="view hidden" data-view="5">
+      </div>
+      <div class="col-10 center-all">
+        <i class="fas fa-angle-right right-arrow"></i>
+      </div>
+    </div>
+    <div class="row center-all circle-container">
+      <div class="col-fifth center-all">
+        <i class="fas fa-circle circle" data-view="1"></i>
+      </div>
+      <div class="col-fifth center-all">
+        <i class="far fa-circle circle" data-view="2"></i>
+      </div>
+      <div class="col-fifth center-all">
+        <i class="far fa-circle circle" data-view="3"></i>
+      </div>
+      <div class="col-fifth center-all">
+        <i class="far fa-circle circle" data-view="4"></i>
+      </div>
+      <div class="col-fifth center-all">
+        <i class="far fa-circle circle" data-view="5"></i>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
