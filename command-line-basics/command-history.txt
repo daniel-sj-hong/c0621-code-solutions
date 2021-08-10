@@ -1,0 +1,587 @@
+    1  git config --global user.name "daniel-sj-hong"
+    2  git config --global user.email "dan8492@gmail.com"
+    3  git config --global --list
+    4  git status
+    5  cd repos
+    6  cd c0521-code-solutions/
+    7  git status
+    8  ls
+    9  git status
+   10  git checkout -b http-messages
+   11  cd http-messages
+   12  htttp http://example.com
+   13  http http://example.com
+   14  http --verbose http://www.example.com
+   15  http --body GET https://jsonplaceholder.typicode.com/users > users.json
+   16  http --body GET http://example.com > index.html
+   17  cd ..
+   18  cd c0
+   19  cd c0521-code-solutions/
+   20  git status
+   21  git add http-messages
+   22  git commit -m "completed http-messages"
+   23  git push origin http-messages
+   24  git checkout master
+   25  git pull origin master
+   26  git checkout -b javascript-ajax
+   27  cd javascript-ajax
+   28  git status
+   29  git add javascript-ajax
+   30  git add .
+   31  git commit -m "completed javascript-ajax"
+   32  git push origin .
+   33  git push origin javascript-ajax
+   34  git checkout master
+   35  cd repos
+   36  cd c0521-code-solutions/
+   37  git checkout javascript-carousel
+   38  git checkout master
+   39  git status
+   40  git add javascript-carousel/main.js 
+   41  git commit -m "coming back later"
+   42  git commit -m "coming back later" --no-verify
+   43  git checkout master
+   44  git pull origin master
+   45  git checkout master
+   46  git checkout javascript-carousel
+   47  git checkout master
+   48  git pull origin master
+   49  git checkout javascript-carousel
+   50  git pull origin master
+   51  git checkout master
+   52  git checkout javascript-carousel
+   53  git status
+   54  git add javascript-carousel/
+   55  git commit -m "sorta completed javascript-carousel"
+   56  git push origin javascript-carousel 
+   57  git checkout master
+   58  cd ..
+   59  cd code-journal/
+   60  git branch
+   61  git checkout issue-2-view-an-entry 
+   62  git checkout master
+   63  cd ..
+   64  ls
+   65  cd ..
+   66  ls
+   67  cd ..
+   68  ls
+   69  cd dev
+   70  ls
+   71  cd ..
+   72  ls
+   73  cd repos
+   74  ls
+   75  cd c0521-code-solutions/
+   76  cd ..
+   77  git clone git@github.com:daniel-sj-hong/ajax-project.git
+   78  ls
+   79  cd ajax-project/
+   80  npm ci
+   81  git checkout -b issue-1-user-can-generate-new-eevee
+   82  git status
+   83  git add .
+   84  git status
+   85  git commit -m "added in the html elements and about to start on styling everything in the css."
+   86  git status
+   87  git add .
+   88  git status
+   89  git commit -m "completed the css styling for the button and added the cream background"
+   90  git status
+   91  git add .
+   92  git commit -m "completed all the html and css styling. moving on to the javascript"
+   93  git status
+   94  git checkout master
+   95  git add index.html 
+   96  git commit -m "coming back later"
+   97  git checkout master
+   98  cd ..
+   99  cd c0521-code-solutions/
+  100  cd ..
+  101  cd code-journal/
+  102  git branch
+  103  git checkout issue-2-view-an-entry 
+  104  git checkout master
+  105  cd ..
+  106  cd ajax-project/
+  107  git branch
+  108  git checkout issue-1-user-can-generate-new-eevee 
+  109  git status
+  110  git add .
+  111  git commit -m "committing what I got so far. I got the eevee image to show up using AJAX and it's displaying on the page"
+  112  git status
+  113  git add js/main.js 
+  114  git commit -m "committing what I got so far. I got the eevee image to show up using AJAX and it's displaying on the page"
+  115  git commit -m "committing what I got so far. I got the eevee image to show up using AJAX and it's displaying on the page" --no-verify
+  116  git status
+  117  git add .
+  118  git commit -m "committing current progress"
+  119  git push origin issue-1-user-can-generate-new-eevee 
+  120  git status
+  121  git add .
+  122  git commit -m "added functionality to call eevee button and got my stones at the bottom to show all 3 separate stones"
+  123  git push origin issue-1-user-can-generate-new-eevee 
+  124  git status
+  125  git add .
+  126  git commit -m "created a form element and input all form related elements into it. now takes the nickname given to an eevee and it is stored into my data variable"
+  127  git commit -m "created a form element and input all form related elements into it. now takes the nickname given to an eevee and it is stored into my data variable" --no-verify
+  128  git push origin issue-1-user-can-generate-new-eevee 
+  129  git status
+  130  git add .
+  131  git commit -m "completed feature 1 where user can generate a new eevee and nickname it"
+  132  git push origin issue-1-user-can-generate-new-eevee 
+  133  git status
+  134  git add .
+  135  git commit -m "made the suggested changes"
+  136  git push origin issue-1-user-can-generate-new-eevee 
+  137  https://github.com/daniel-sj-hong/ajax-project/pull/2
+  138  git status
+  139  git add .
+  140  git commit -m "added new row of text that prompts the user to click on one of the elemental stones after they submit a nickname for their eevee"
+  141  git reset --soft head^
+  142  git status
+  143  git push -f origin issue-1-user-can-generate-new-eevee 
+  144  git checkout master
+  145  git status
+  146  git stash
+  147  git checkout master
+  148  git pull origin master
+  149  git checkout -b issue-2-user-can-evolve-eevee
+  150  git stash apply
+  151  git status
+  152  git add .
+  153  git status
+  154  git commit -m "in progress"
+  155  git status
+  156  git pull origin master
+  157  git checkout master
+  158  git status
+  159  git add .
+  160  git commit -m "in progress"
+  161  git status
+  162  git commit -m "in progress"
+  163  git status
+  164  git add index.html 
+  165  git add js/
+  166  git commit -m "in progress"
+  167  git status
+  168  git add .
+  169  git status
+  170  git commit -m "some weird things happened with my code and it reverting beyond a simply undo command of ctrl + z. I think I've fixed a good amount and restored it back to a good spot. committing what I got now."
+  171  git commit -m "some weird things happened with my code and it reverting beyond a simply undo command of ctrl + z. I think I've fixed a good amount and restored it back to a good spot. committing what I got now." --no-verify
+  172  git push origin issue-2-user-can-evolve-eevee 
+  173  pwd
+  174  ls
+  175  cd repos
+  176  ls
+  177  cd ajax-project/
+  178  git status
+  179  git add js/main.js 
+  180  ls
+  181  cd repos
+  182  ls
+  183  cd ajax-project/
+  184  git status
+  185  git add .
+  186  git status
+  187  git commit -m "completed the 5th feature where a user can generate a new eevee and now user no longer needs to refresh the page to start over."
+  188  git commit -m "completed the 5th feature where a user can generate a new eevee and now user no longer needs to refresh the page to start over." --no-verify
+  189  git push origin issue-5-user-can-generate-new-eevee 
+  190  git status
+  191  git add js/main.js 
+  192  git commit "added in the nickname text because I forgot to add it in. Now completed issue 5 where user can generate new eevee"
+  193  git push origin issue-5-user-can-generate-new-eevee 
+  194  git commit -m "added in the nickname text because I forgot to add it in. Now completed issue 5 where user can generate new eevee" --no-verify
+  195  git push origin issue-5-user-can-generate-new-eevee 
+  196  git status
+  197  git add css/styles.css 
+  198  git commit -m "added a psuedoclass to the yes button that i forgot."
+  199  git push origin issue-5-user-can-generate-new-eevee 
+  200  git status
+  201  git add .
+  202  git commit -m "made suggested changes. i think"
+  203  git push origin issue-5-user-can-generate-new-eevee 
+  204  ls
+  205  pwd
+  206  ls 
+  207  cd repos
+  208  ls
+  209  cd ajax
+  210  cd ajax-project/
+  211  git checkout master
+  212  git status
+  213  ls
+  214  cd repos
+  215  ls
+  216  cd ajax-project/
+  217  git branch
+  218  git checkout user-can-generate-shiny-eevee-randomly 
+  219  git status
+  220  ls
+  221  cd repos
+  222  cd ajax-project/
+  223  git status
+  224  cd repos
+  225  cd ajax-project/
+  226  git status
+  227  cd repos
+  228  cd ajax-project/
+  229  git status
+  230  git add .
+  231  git commit -m "committing things that it wants me to commit for some reason even though i already committed"
+  232  git branch
+  233  git checkout issue-6-user-can-generate-shiny-eevee-randomly 
+  234  git checkout master
+  235  git pull origin master
+  236  cd repos
+  237  cd ajax-project/
+  238  git status
+  239  git pull origin master
+  240  git log
+  241  cd repos
+  242  cd ajax-project/
+  243  git status
+  244  cd repos
+  245  git clone git@github.com:daniel-sj-hong/ajax-project.git
+  246  cd ajax-project/
+  247  npm ci
+  248  cd repos
+  249  cd ajax-project/
+  250  git branch
+  251  git checkout -b issue-1-user-can-click-on-button-to-generate-joke
+  252  git status
+  253  git add .
+  254  git commit -m "laid out the html and css foundation"
+  255  git push origin issue-1-user-can-click-on-button-to-generate-joke 
+  256  git status
+  257  git add .
+  258  git commit -m "added a div with attribute generate-joke for later when i switch views"
+  259  git push origin issue-1-user-can-click-on-button-to-generate-joke 
+  260  git status
+  261  git add .
+  262  git commit -m "changed the initial look of the app first and added in a div with attribute of data-view=jokes"
+  263  git push origin issue-1-user-can-click-on-button-to-generate-joke 
+  264  git status
+  265  git add .
+  266  git commit -m "created a data model. used ajax to fetch the joke and stored the setup of the joke into the data model"
+  267  git commit -m "created a data model. used ajax to fetch the joke and stored the setup of the joke into the data model" --no-verify
+  268  git push origin issue-1-user-can-click-on-button-to-generate-joke 
+  269  git status
+  270  git add .
+  271  git commit -m "added a hover pseudoclass to the joke button. made sure feature looked nice on both desktop and mobile. made it so that when you click on the button the ajax function is called and appends the joke into the gray text bubble"
+  272  git push origin issue-1-user-can-click-on-button-to-generate-joke 
+  273  git status
+  274  git add .
+  275  git commit -m "added in the white background for the joke container that i forgot to add in"
+  276  git push origin issue-1-user-can-click-on-button-to-generate-joke 
+  277  git status
+  278  git add .
+  279  git status
+  280  git add .
+  281  git commit -m "made suggested change for the white background"
+  282  git push origin issue-1-user-can-click-on-button-to-generate-joke 
+  283  git checkout master
+  284  git status
+  285  git checkout master
+  286  git pull origin master
+  287  git checkout -b issue-2-user-can-click-on-button-to-generate-te-punchline
+  288  git status
+  289  git add .
+  290  git commit -m "added in the punchline button through html and css"
+  291  git push origin issue-2-user-can-click-on-button-to-generate-te-punchline 
+  292  git branch -M issue-2-user-can-click-on-button-to-generate-the-punchline
+  293  git status
+  294  git add .
+  295  git commit -m "i hid the button"
+  296  git push origin issue-2-user-can-click-on-button-to-generate-the-punchline 
+  297  git status
+  298  git add .
+  299  git commit -m "queried the punchline button"
+  300  git commit -m "queried the punchline button" --no-verify
+  301  git push origin issue-2-user-can-click-on-button-to-generate-the-punchline 
+  302  git status
+  303  git add .
+  304  git commit -m "punchline button appears after the initial joke is generated"
+  305  git push origin issue-2-user-can-click-on-button-to-generate-the-punchline 
+  306  cd repos/
+  307  cd ajax-project/
+  308  cd repos
+  309  cd ajax-project/
+  310  git status
+  311  git add .
+  312  git commit -m "got the main functionality of issue 2. clicking the the punchline button will generate the punchline of the joke. Having some css issues currently and committing what i got so far"
+  313  git status
+  314  git add .
+  315  git commit -m "got the main functionality of issue 2. clicking the the punchline button will generate the punchline of the joke. Having some css issues currently and committing what i got so far"
+  316  git push origin issue-2-user-can-click-on-button-to-generate-the-punchline 
+  317  git status
+  318  git add .
+  319  git commit -m "fixed a css issue with the button placements"
+  320  git push origin issue-2-user-can-click-on-button-to-generate-the-punchline 
+  321  git status
+  322  git add .
+  323  git commit -m "added a pseudoclass for my punchline button"
+  324  git push origin issue-2-user-can-click-on-button-to-generate-the-punchline 
+  325  git status
+  326  git add .
+  327  git commit -m "removed commented out code"
+  328  git status
+  329  git push origin issue-2-user-can-click-on-button-to-generate-the-punchline 
+  330  git checkout master
+  331  git pull origin master
+  332  git checkout -b issue-3-user-can-click-on-button-to-generate-more-jokes
+  333  git branch
+  334  git status
+  335  git add .
+  336  git commit -m "added in more jokes button and edited the button with css. I just queried the button and starting to add functionality to the button"
+  337  git commit -m "added in more jokes button and edited the button with css. I just queried the button and starting to add functionality to the button" --no-verify
+  338  git push origin issue-3-user-can-click-on-button-to-generate-more-jokes 
+  339  git status
+  340  git add .
+  341  git commit -m "finished issue 3. user can generate more jokes."
+  342  git push origin issue-3-user-can-click-on-button-to-generate-more-jokes 
+  343  git status
+  344  git add .
+  345  git commit -m "had to change the feature a bit as if the 'more jokes' button created a text bubble and the user was chatting"
+  346  git commit -m "had to change the feature a bit as if the 'more jokes' button created a text bubble and the user was chatting" --no-verify
+  347  git push origin issue-3-user-can-click-on-button-to-generate-more-jokes 
+  348  git status
+  349  git add .
+  350  git commit -m "removed commented out code"
+  351  git push origin issue-3-user-can-click-on-button-to-generate-more-jokes 
+  352  git status
+  353  git add .
+  354  git commit -m "got rid of css classes that weren't doing anything"
+  355  git push origin issue-3-user-can-click-on-button-to-generate-more-jokes 
+  356  git checkout master
+  357  git pull origin master
+  358  git checkout -b issue-4-user-can-click-on-button-to-react-to-joke
+  359  git status 
+  360  git add .
+  361  git commit -m "added an overflow to the joke container and switched the more joke button to fixed positioning rather than absolute"
+  362  git push origin issue-4-user-can-click-on-button-to-react-to-joke 
+  363  git status
+  364  git add .
+  365  git commit -m "added in the emojis and adding functionality to them now"
+  366  git push origin issue-4-user-can-click-on-button-to-react-to-joke 
+  367  git status
+  368  git add .
+  369  git commit -m "quiered the emojis" --no-verify
+  370  git push origin issue-4-user-can-click-on-button-to-react-to-joke 
+  371  git status
+  372  git add .
+  373  git commit -m "updated data model to store the jokes"
+  374  git push origin issue-4-user-can-click-on-button-to-react-to-joke 
+  375  cd repos
+  376  ccd ajax-project/
+  377  cd ajax-project/
+  378  git status
+  379  git add .
+  380  git commit -m "positioned the buttons correctly and funny reacts are getting stored into the data model and the reactions are showing up as a response"
+  381  git push origin issue-4-user-can-click-on-button-to-react-to-joke 
+  382  git status
+  383  git add .
+  384  git commit -m "added a pseudoclass for the emojis so that the icons change on hover"
+  385  git push origin issue-4-user-can-click-on-button-to-react-to-joke 
+  386  git status
+  387  cd repos
+  388  cd ajax-project/
+  389  git status
+  390  git add .
+  391  git commit -m "a lot of things were being appended incorrectly, so i made sure that they were being appended correctly to the right location. also fixed a major css issue. got rid of the scroll bars so it looks cleaner
+  392  git commit -m "a lot of things were being appended incorrectly, so i made sure that they were being appended correctly to the right location. also fixed a major css issue. got rid of the scroll bars so it looks cleaner"
+  393  git push origin issue-4-user-can-click-on-button-to-react-to-joke 
+  394  git status
+  395  git checkout master
+  396  git pull origin master
+  397  git status
+  398  git checkout -b issue-5-user-can-see-their-collection-of-jokes
+  399  git status
+  400  git add .
+  401  git commit -m "created the collection button and styled it"
+  402  git push origin issue-5-user-can-see-their-collection-of-jokes 
+  403  git status
+  404  git add .
+  405  git commit -m "hid the collection button"
+  406  git push origin issue-5-user-can-see-their-collection-of-jokes 
+  407  git status
+  408  git add .
+  409  git commit -m "user can see the collection button after they have reacted to a joke"
+  410  git push origin issue-5-user-can-see-their-collection-of-jokes 
+  411  git status
+  412  git add .
+  413  git commit -m "clicking on the collection button clears the container and appends only the ones that the user reacted to with a funny emoji"
+  414  git push origin issue-5-user-can-see-their-collection-of-jokes 
+  415  git status
+  416  git add .
+  417  git commit -m "created the back-to-jokes button and made it so that it only appears after the collection button is clicked"
+  418  git push origin issue-5-user-can-see-their-collection-of-jokes 
+  419  git status
+  420  git add .
+  421  git commit -m "user can go back to an empty container to get more jokes"
+  422  git push origin issue-5-user-can-see-their-collection-of-jokes 
+  423  git status
+  424  git add .
+  425  git commit -m "made the two new buttons have pseudoclasses to a cursor pointer" 
+  426  git push origin issue-5-user-can-see-their-collection-of-jokes 
+  427  git status
+  428  git add .
+  429  git commit -m "added the big laughing emoji that appears when you're on the collection screen and it disappears when you go back to the jokes"
+  430  git push origin issue-5-user-can-see-their-collection-of-jokes 
+  431  git status
+  432  git add .
+  433  git commit -m "made the suggested change of removing children elements into one function"
+  434  git push origin issue-5-user-can-see-their-collection-of-jokes 
+  435  git status
+  436  git add .
+  437  git commit -m "made the suggested change
+  438  git commit -m "made the suggested change"
+  439  git push origin issue-5-user-can-see-their-collection-of-jokes 
+  440  git checkout master
+  441  git pull origin master
+  442  git checkout -b project-code
+  443  git status
+  444  git add .
+  445  git commit -m "got rid of css rule-sets that weren't being used and added a line height to the body"
+  446  git push origin project-code 
+  447  git checkout master
+  448  git pull origin master
+  449  git status
+  450  git checkout -b project-interfaces
+  451  git status
+  452  git add .
+  453  git commit -m "added in a spinner during that AJAX request"
+  454  git push origin project-interfaces 
+  455  git status
+  456  git add .
+  457  git commit -m "added a bunch of css transitions"
+  458  git push origin project-interfaces 
+  459  git status
+  460  git add .
+  461  git commit -m "fixed the spinner positioning"
+  462  git push origin project-interfaces 
+  463  git status
+  464  git add .
+  465  git commit -m "made the suggested changes with the box shadows by making it have it's own rule set"
+  466  git push origin project-interfaces 
+  467  git checkout master
+  468  git pull origin master
+  469  git checkout -b project-polish
+  470  git checkout master
+  471  git remote set-url origin git@github.com:daniel-sj-hong/got-jokes.git
+  472  git status
+  473  git pull origin master
+  474  cd ..
+  475  mv ajax-project got-jokes
+  476  ls
+  477  cd got-jokes/
+  478  git branch
+  479  git checkout project-polish 
+  480  git status
+  481  git add .
+  482  git commit -m "created a new icon. changed the title of the app. changed the repo name and fixed some slight positioning"
+  483  git push origin project-polish 
+  484  git checkout master
+  485  git pull origin master
+  486  cd ..
+  487  cd c0621-code-solutions/
+  488  git branch
+  489  git checkout array-manipulation-2
+  490  cd repos/
+  491  cd c0621-code-solutions/
+  492  git checkout master
+  493  git checkout -b es6-const-let
+  494  git status
+  495  git add es6-const-let/
+  496  git commit -m "completed es6-const-let"
+  497  git push origin es6-const-let 
+  498  git checkout master
+  499  git checkout -b es6-template-literals
+  500  git status
+  501  git add es6-template-literals/
+  502  git commit -m "completed es6-template-literals"
+  503  git push origin es6-template-literals 
+  504  git status
+  505  git add es6-template-literals/
+  506  git status
+  507  git commit -m "missed the other two lines
+  508  git commit -m "missed the other two lines"
+  509  git push origin es6-template-literals 
+  510  git checkout master
+  511  git checkout -b es6-destructuring
+  512  git status
+  513  git add es6-destructuring/
+  514  git commit -m "completed es6 destructuring"
+  515  git push origin es6-destructuring 
+  516  git checkout master 
+  517  git pull origin master
+  518  git checkout -b es6-arrow-functions
+  519  git status
+  520  git add es6-arrow-functions/
+  521  git commit -m "completed es6-arrow-functions"
+  522  git push origin es6-arrow-functions 
+  523  git checkout master
+  524  git status
+  525  git checkout -b command-line-basics
+  526  git status
+  527  cd command-line-basics/
+  528  man man
+  529  man cat
+  530  cat laziness.txt
+  531  cat impatience.txt
+  532  cat hubris.txt
+  533  cat laziness.txt impatience.txt hubris.txt
+  534  cat laziness.txt impatience.txt hubris.txt > three-virtues.txt
+  535  cat three-virtues.txt
+  536  man ls
+  537  ls lfz-staff/
+  538  -a lfz-staff
+  539  -a lfz-staff/
+  540  ls lfz-staff/ -a
+  541  ls lfz-staff/ -F
+  542  man ls
+  543  ls -aF lfz-staff > lfz-staff/contents.txt
+  544  cat lfz-staff/contents.txt
+  545  man pwd
+  546  pwd
+  547  pwd > i-was-here.txt
+  548  ls
+  549  cat i-was-here.txt 
+  550  man echo
+  551  echo 'Hello, World!'
+  552  echo 'Hello, World!' > hello.txt
+  553  ls
+  554  cat hello.txt
+  555  an touch
+  556  man touch
+  557  touch tag-youre-it.txt
+  558  touch boop.txt
+  559  ls
+  560  touch snoot/boop.txt
+  561  ls snoot/
+  562  man mkdir
+  563  mkdir parent
+  564  ls
+  565  man mkdir
+  566  mkdir -p parent/child/grandchild
+  567  ls
+  568  touch parent/child/granchild/.gitkeep
+  569  touch parent/child/grandchild/.gitkeep
+  570  ls -a
+  571  man mv
+  572  mv pkiemans pokemon
+  573  mv pokiemans pokemon
+  574  ls
+  575  man rm
+  576  rm lol.txt
+  577  ls
+  578  rm -r kill-me/
+  579  ls
+  580  man cp
+  581  cp and-then.txt no-and-then.txt
+  582  ls
+  583  cat and-then.txt
+  584  cat no-and-then.txt
+  585  man history
+  586  history
+  587  history > command-history.txt
