@@ -9,7 +9,7 @@ function chunk(array, size) {
       takenArray = [];
     }
   }
-  if (takenArray.length < size && takenArray.length === 1) {
+  if (takenArray.length < size && takenArray.length > 0) {
     tookenArray.push(takenArray);
   }
   return tookenArray;
