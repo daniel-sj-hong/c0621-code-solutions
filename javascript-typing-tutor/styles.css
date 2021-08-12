@@ -1,0 +1,53 @@
+* {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.sub-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px 20px;
+  background-color: #ff4500;
+  border: none;
+}
+
+.green {
+  color: #18cd1b;
+}
+
+.red {
+  color: red;
+}
+
+.border {
+  border-bottom: solid;
+}
