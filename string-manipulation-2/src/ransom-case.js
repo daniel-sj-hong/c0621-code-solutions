@@ -11,5 +11,8 @@ function ransomCase(string) {
   return container;
 }
 
-// input - any string
-// output - the string but every other word is capitalized
+// make container to hold the string
+// loop through the entire length of the string
+// if the index of i is ever divisible by 2 with a remainder of 0, lowercase that letter
+// if the index of i is not divisible by 2, uppercase that letter
+// return the container
