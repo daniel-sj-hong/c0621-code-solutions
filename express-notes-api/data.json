@@ -1,13 +1,9 @@
 {
-  "nextId": 20,
+  "nextId": 21,
   "notes": {
-    "2": {
-      "id": 2,
-      "content": "edit"
-    },
     "5": {
       "id": 5,
-      "content": "blah"
+      "content": "i am hungry"
     },
     "6": {
       "id": 6,
@@ -20,6 +16,10 @@
     "18": {
       "id": 18,
       "content": "whee"
+    },
+    "20": {
+      "id": 20,
+      "content": "i like dogs"
     }
   }
 }

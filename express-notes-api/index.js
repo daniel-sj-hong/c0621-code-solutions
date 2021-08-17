@@ -26,6 +26,7 @@ app.get('/api/notes/:id', (req, res) => {
       res.status(404).json({
         error: `cannot find note with id ${id}`
       });
+      return;
     }
     res.status(200).json(entry);
   }
