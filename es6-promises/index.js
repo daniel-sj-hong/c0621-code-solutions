@@ -7,5 +7,5 @@ variable.then(value => {
 });
 
 variable.catch(error => {
-  console.error(error);
+  console.log(error.message);
 });
