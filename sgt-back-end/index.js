@@ -51,7 +51,7 @@ app.post('/api/grades', (req, res) => {
   const params = [req.body.name, req.body.course, req.body.score];
   db.query(sql, params)
     .then(result => {
-      const grade = result.rows;
+      const grade = result.rows[0];
       res.status(201).json(grade);
     })
     .catch(err => {
@@ -88,7 +88,7 @@ app.put('/api/grades/:id', (req, res) => {
   }
   db.query(sql, params)
     .then(result => {
-      const grade = result.rows;
+      const grade = result.rows[0];
       if (grade.length === 0) {
         res.status(404).json({
           error: `${parse} is not an existing id.`
