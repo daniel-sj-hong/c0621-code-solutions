@@ -14,12 +14,7 @@ class Stopwatch extends React.Component {
   handleCounter() {
     if (!this.state.isPlaying) {
       this.interval = setInterval(() => {
-        this.setState(state => {
-          return {
-            counter: state.counter + 1,
-            isPlaying: true
-          };
-        });
+        this.setState({ counter: this.state.counter + 1, isPlaying: true });
       }, 1000);
     } else {
       this.setState({ isPlaying: false });
