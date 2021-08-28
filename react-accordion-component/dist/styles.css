@@ -1,0 +1,15 @@
+.header {
+  width: 20%;
+  background-color: #ddd;
+  border: solid 1px;
+  height: 30px;
+}
+
+.body {
+  width: 20%;
+  border: solid 1px;
+}
+
+.hidden {
+  display: none;
+}
