@@ -15,28 +15,13 @@ class Accordian extends React.Component {
   }
 
   render() {
-    const list = [
-      {
-        title: 'HTML',
-        text: 'ur cool'
-      },
-      {
-        title: 'CSS',
-        text: 'u suck'
-      },
-      {
-        title: 'JavaScript',
-        text: 'ur ok'
-      }
-    ];
-
     const { indexWindowOn } = this.state;
-    const array = list.map((item, index) =>
-    <div key={index}>
-      <div className="header" onClick={() => { this.toggleOn(index); }}>
+    const array = this.props.data.map(item =>
+    <div key={item.key}>
+      <div className="header" onClick={() => { this.toggleOn(item.key); }}>
         {item.title}
       </div>
-      <div className={ indexWindowOn === index ? 'body' : 'hidden'}>
+      <div className={ indexWindowOn === item.key ? 'body' : 'hidden'}>
         {item.text}
       </div>
     </div>
