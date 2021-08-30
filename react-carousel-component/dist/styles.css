@@ -1,0 +1,33 @@
+.container {
+  max-width: 900px;
+  margin: auto;
+  height: 100%;
+  border: solid;
+}
+
+.row {
+  display: flex;
+}
+
+.col-10 {
+  width: 10%;
+}
+
+.col-80 {
+  width: 80%;
+}
+
+.col-fifth {
+  width: 5%;
+  margin-bottom: 15px;
+}
+
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-40 {
+  font-size: 40px;
+}
