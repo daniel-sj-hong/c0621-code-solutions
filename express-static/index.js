@@ -2,11 +2,10 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-const staticMiddleware = express.static('public');
-app.use(staticMiddleware);
-
 const join = path.join(__dirname, 'public');
-console.log(join);
+
+const staticMiddleware = express.static(join);
+app.use(staticMiddleware);
 
 app.listen(3000, () => {
   // eslint-disable-next-line no-console
