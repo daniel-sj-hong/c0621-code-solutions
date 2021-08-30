@@ -5,7 +5,6 @@ class Carousel extends React.Component {
     super(props);
     this.state = {
       counter: 0,
-      image: '../dist/images/001.png',
       id: null
     };
     this.arrowRight = this.arrowRight.bind(this);
