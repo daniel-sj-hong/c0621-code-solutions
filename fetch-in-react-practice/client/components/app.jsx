@@ -42,7 +42,6 @@ export default class App extends React.Component {
     * TIP: Use Array.prototype.concat to create a new array containing the contents
     * of the old array, plus the object returned by the server.
     */
-    const stateCopy = { todos: this.state.todos.slice() };
     fetch('/api/todos', {
       method: 'POST',
       headers: {
@@ -52,8 +51,8 @@ export default class App extends React.Component {
     })
       .then(response => response.json())
       .then(data => {
-        const newData = stateCopy.concat(data);
-        this.setState(newData);
+        const newData = this.state.todos.concat(data);
+        this.setState({ todos: newData });
       });
   }
 
