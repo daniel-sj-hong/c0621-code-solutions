@@ -42,7 +42,7 @@ export default class App extends React.Component {
     * TIP: Use Array.prototype.concat to create a new array containing the contents
     * of the old array, plus the object returned by the server.
     */
-    const stateCopy = this.state.todos;
+    const stateCopy = { todos: this.state.todos.slice() };
     fetch('/api/todos', {
       method: 'POST',
       headers: {
@@ -53,7 +53,7 @@ export default class App extends React.Component {
       .then(response => response.json())
       .then(data => {
         const newData = stateCopy.concat(data);
-        this.setState({ todos: newData });
+        this.setState(newData);
       });
   }
 
@@ -76,10 +76,10 @@ export default class App extends React.Component {
      * And specify the "Content-Type" header as "application/json"
      */
     let tempState;
-    const stateCopy = this.state.todos;
+    const stateCopy = { todos: this.state.todos.slice() };
     for (let i = 0; i < this.state.todos.length; i++) {
       if (this.state.todos[i].todoId === todoId) {
-        tempState = this.state.todos[i];
+        tempState = stateCopy.todos[i];
         tempState.isCompleted = !tempState.isCompleted;
         stateCopy[i] = tempState;
       }
@@ -94,7 +94,7 @@ export default class App extends React.Component {
     })
       .then(response => response.json())
       .then(data => {
-        this.setState({ todos: stateCopy });
+        this.setState(stateCopy);
       });
   }
 
