@@ -1,0 +1,34 @@
+- User can sign up
+> A user will click on the 'register now' link or 'sign up' button which will which brings the user to the AuthForm class component.
+> user then inputs their username and password into the input fields and in the background, React is now listening for change events.
+> in the handleChange method, it checks for the event.target and updates the state to contain the values that the user input.
+> user clicks on the register button which triggers the handleSubmit method. Default is prevented and a POST fetch request is sent to the server with the values from event.target
+> now we are in index.js.
+> server's post request checks if username and password were provided. if not, throws an error with code 400.
+> if they are provided, it hashes the password with the hash method, queries the database and then inserts the username and hashed password into the database and sends a 201 to show the client that a new user has been created.
+> client side we got the response and parsed it and checked to see if the action was 'sign-up' and if it was, the user is redirected to the sign-in page by updating the window.location.hash to be 'sign-in'
+
+- User can sign in
+> when a user inputs a username and password, state is gonna update to hold the event.target values.
+> when the user clicks the login button, state is turned into JSON data as the body and fetch call is sent to the server by checking the action 'sign-in' via props.
+> the server's post request checks if username and password were provided.
+> if it wasn't provided, throw a client error showing invalid login and 401 status.
+> now we query the database to see if the provided username exists.
+> if it doesn't exist, throw client error showing invalid login and 401 again.
+> if username exists, it checks if the password matches the one in the database using verify method of argon2 object.
+> if password doesn't match, throw client error of invalid log in.
+> if password does match, create a token for the user
+> client side, checks the action.
+> checks if there is a user and a token and calls the onSignIn method via props passing in the parsed response.
+> handleSignIn holds the token in local storage and updates state to user
+
+- User can stay signedin (even if they refresh the page)
+> When user refreshes the page, state is updated by setting the location to route. then we check if local storage has a token and sets that to the variable token.
+> if token is truthy, token is decode to reveal the user's information.
+> then updates state with the value of the user and render runs again.
+> home page renders.
+
+- user can sign out
+> sign out button is clicked and handleSignOut is called via context......?
+> handleSignOut in the App component removes the token from client's local storage and sets state of user to null
+> render is run again and the sign-in page renders
